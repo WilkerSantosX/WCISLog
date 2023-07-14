@@ -1,0 +1,185 @@
+/* @media screen and (max-width: 2000px) */
+@media screen and (max-width: 1400px) {
+	#map {
+		height: 260px;
+	}
+	span.badge.new {
+		font-weight: 300;
+		font-size: 0.8rem;
+		color: #fff;
+		background-color: #26a69a;
+		border-radius: 15px !important;
+		float: left;
+	}	
+}
+/* @media screen and (max-width: 2001px) */
+@media screen and (min-width: 1401px) {
+	#map {
+		height: 550px;
+	}
+	body{
+		margin: 30px;
+	}
+	span.badge {
+		min-width: 6rem;
+		padding: 0 6px;
+		margin-left: 14px;
+		text-align: center;
+		font-size: 1rem;
+		line-height: 28px;
+		height: 31px;
+		color: #757575;
+		float: left;
+		-webkit-box-sizing: border-box;
+		box-sizing: border-box;
+	}
+	
+	span.badge.new {
+		cursor: pointer;
+		font-weight: 600;
+		font-size: 1rem;
+		color: #fff;
+		background-color: #26a69a;
+		border-radius: 15px !important;
+	}
+	
+}
+
+.card .card-title.modal {
+    font-size: 27px;
+    font-weight: 600;
+    font-family: cursive;
+}
+
+.fixed-action-btn {
+    z-index: 1000;
+}
+
+h1 {
+	position: relative;
+	padding: 0;
+	margin: 0;
+	font-family: "Raleway", sans-serif;
+	font-weight: 300;
+	font-size: 40px;
+	color: #080808;
+	-webkit-transition: all 0.4s ease 0s;
+	-o-transition: all 0.4s ease 0s;
+	transition: all 0.4s ease 0s;
+  }
+  
+  h1 span {
+	display: block;
+	font-size: 0.5em;
+	line-height: 1.3;
+  }
+  h1 em {
+	font-style: normal;
+	font-weight: 600;
+  }
+
+  .three h1 {
+	font-size: 28px;
+	font-weight: 500;
+	letter-spacing: 0;
+	line-height: 1.5em;
+	padding-bottom: 15px;
+	position: relative;
+  }
+  .three h1:before {
+	content: "";
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	height: 5px;
+	width: 55px;
+	background-color: #111;
+  }
+  .three h1:after {
+	content: "";
+	position: absolute;
+	left: 0;
+	bottom: 2px;
+	height: 1px;
+	width: 95%;
+	max-width: 255px;
+	background-color: #333;
+  }
+
+/* 
+	body{
+		margin: 10px;
+		background: rgb(130, 10, 209);
+	} */
+	/* #map {
+		height: 500px;
+	} */
+	
+	/* .row .detalhes .col.l12 {
+		width: 80% !important;
+	} */
+
+	.input-field {
+		margin-top: 0rem !important;;
+		margin-bottom: 0rem !important;;
+	}
+
+
+	input:not([type]):disabled, 
+	input:not([type])[readonly="readonly"], 
+	input[type=text]:not(.browser-default), 
+	input[type=text]:not(.browser-default):disabled, 
+	input[type=text]:not(.browser-default)[readonly="readonly"], 
+	input[type=password]:not(.browser-default):disabled, 
+	input[type=password]:not(.browser-default)[readonly="readonly"], 
+	input[type=email]:not(.browser-default):disabled, 
+	input[type=email]:not(.browser-default)[readonly="readonly"], 
+	input[type=url]:not(.browser-default):disabled, 
+	input[type=url]:not(.browser-default)[readonly="readonly"], 
+	input[type=time]:not(.browser-default):disabled, 
+	input[type=time]:not(.browser-default)[readonly="readonly"], 
+	input[type=date]:not(.browser-default):disabled, 
+	input[type=date]:not(.browser-default)[readonly="readonly"], 
+	input[type=datetime]:not(.browser-default):disabled, 
+	input[type=datetime]:not(.browser-default)[readonly="readonly"], 
+	input[type=datetime-local]:not(.browser-default):disabled, 
+	input[type=datetime-local]:not(.browser-default)[readonly="readonly"], 
+	input[type=tel]:not(.browser-default):disabled, 
+	input[type=tel]:not(.browser-default)[readonly="readonly"], 
+	input[type=number]:not(.browser-default):disabled, 
+	input[type=number]:not(.browser-default)[readonly="readonly"], 
+	input[type=search]:not(.browser-default):disabled, 
+	input[type=search]:not(.browser-default)[readonly="readonly"], 
+	textarea.materialize-textarea:disabled, 
+	textarea.materialize-textarea[readonly="readonly"] {
+		border-bottom: none !important;
+	}
+
+
+
+
+
+	/* .blue-grey-project {
+		background-color: #6c311a26 !important;
+	} */
+
+	/* .dropdown-content.select-dropdown {
+		background-color: cornsilk !important;
+	}
+
+	.select-dropdown.dropdown-trigger{
+		color: rgb(255 158 46) !important;
+	}
+
+	.select-wrapper .caret {
+		fill: rgb(255 158 46) !important;
+	} */
+/* 
+	.datepicker-date-display {
+		background: rgb(130, 10, 209);
+	}
+
+	.card .card-title {
+		font-size: 36px;
+		font-weight: 600;
+	} */
