@@ -37,90 +37,66 @@
 				<div class="card-content">
 					<div class="three">
 						<h1>WCIS Log | De olho em sua logística</h1>
-					  </div>
-					<br/>
-					
-					<span class="new badge" 
-						data-badge-caption="alertas">
+					</div>
+					<br />
+
+					<span class="new badge" data-badge-caption="alertas">
 						0
-					</span>								
-					<span class="new badge green" 
-						data-badge-caption="evento">
+					</span>
+					<span class="new badge green" data-badge-caption="evento">
 						0
-					</span>	
-					<br/><br/>
+					</span>
+					<br /><br /><br />
 
 					<div class="row detalhes">
 						<form class="col s12 m12 l12">
 
 							<div class="input-field col s12 m2 l2">
 								<i class="material-icons prefix purple-text">confirmation_number</i>
-								<input id="codigo_id"  
-									type="text" 
-									value=""
-									disabled>
+								<input id="codigo_id" placeholder="0000000" type="text" disabled>
 								<label>Código</label>
 							</div>
 
 							<div class="input-field col s12 m2 l2">
 								<i class="material-icons prefix purple-text">assignment_ind</i>
-								<input id="motorista_id"  
-									type="text" 
-									value=""
-									disabled>
+								<input id="motorista_id" placeholder="11111111111" type="text" value="" disabled>
 								<label>Motorista</label>
 							</div>
 
 							<div class="input-field col s12 m2 l2">
 								<i class="material-icons prefix purple-text">local_shipping</i>
-								<input id="veiculo_id"  
-									type="text" 
-									value=""
-									disabled>
+								<input id="veiculo_id" placeholder="AAA1111" type="text" value="" disabled>
 								<label>Veículo</label>
 							</div>
 
 							<div class="input-field col s12 m8 l4">
 								<i class="material-icons prefix purple-text">find_in_page</i>
-								<input id="notas_id"  
-									type="text" 
-									value=""
-									disabled>
+								<input id="notas_id" placeholder="11111-1" type="text" value="" disabled>
 								<label>Nota(s)</label>
 							</div>
 
 							<div class="input-field col s12 m8 l4">
 								<i class="material-icons prefix purple-text">place</i>
-								<input id="origem_id"  
-									type="text" 
-									value=""
-									disabled>
+								<input id="origem_id" placeholder="Local de origem" type="text" value="" disabled>
 								<label>Origem(s)</label>
 							</div>
 
 							<div class="input-field col s12 m4 l2">
 								<i class="material-icons prefix purple-text">today</i>
-								<input id="previsao_inicio_id" 
-									type="text" 
-									class="datepicker"
+								<input id="previsao_inicio_id" placeholder="16/07/2023 12:00" type="text" class="datepicker"
 									disabled>
 								<label>Prev. Início</label>
 							</div>
 
 							<div class="input-field col s12 m2 l4">
 								<i class="material-icons prefix purple-text">place</i>
-								<input id="destino_id"  
-									type="text" 
-									value=""
-									disabled>
+								<input id="destino_id" placeholder="Local de destino" type="text" value="" disabled>
 								<label>Destino(s)</label>
 							</div>
 
 							<div class="input-field col s12 m2 l2">
 								<i class="material-icons prefix purple-text">today</i>
-								<input id="previsao_entrega_id" 
-									type="text" 
-									class="datepicker"
+								<input id="previsao_entrega_id" placeholder="16/07/2023 20:00" type="text" class="datepicker"
 									disabled>
 								<label>Prev. Entrega</label>
 							</div>
@@ -128,7 +104,7 @@
 						</form>
 					</div>
 				</div>
-				<div class="card-content" style="margin-top: -30px;">
+				<div class="card-content card-map">
 					<div id="map"></div>
 				</div>
 			</div>
@@ -136,44 +112,44 @@
 	</div>
 
 	<div class="fixed-action-btn">
-		<a href="#modal1" 
-			class="btn-floating btn-large red tooltipped modal-trigger" 
-			data-tooltip="Upload"
+		<a href="#modalUploadArquivo" class="btn-floating btn-large red tooltipped modal-trigger" data-tooltip="Upload"
 			data-position="left">
-		  	<i class="large material-icons">attach_file</i>
+			<i class="large material-icons">attach_file</i>
 		</a>
 	</div>
 
 
 	<!-- Modal Structure -->
-	<div id="modal1" class="modal purple">
+	<div id="modalUploadArquivo" class="modal purple">
 		<div class="modal-content">
-
 			<div class="row">
 				<div class="col s12 m12 l12">
-				  <div class="card">
-					<div class="card-content">
-					  <span class="card-title">Upload de dados</span>
-					  <p>Importe o arquivo no formato csv.
-						<br/>Você pode baixar o modelo <a href="AppData/viagem.csv">aqui</a> e importá-lo para ver como funciona.
-					  </p>
-					  <br/><br/>
-					  <div class="file-field input-field">
-						<div class="btn">
-							<span>File</span>
-							<input type="file" id="upload-csv" accept=".csv">
+					<div class="card">
+						<div class="card-content">
+							<span class="card-title">Upload de dados</span>
+							<p>Importe o arquivo no formato csv.
+								<br />Você pode baixar o modelo <a href="AppData/viagem.csv">aqui</a> e importá-lo para
+								ver
+								como funciona.
+							</p>
+							<br /><br />
+							<div class="file-field input-field">
+								<div class="btn">
+									<span>Arquivo</span>
+									<input type="file" placeholder="Faça o upload do arquivo" id="upload-csv" accept=".csv">
+								</div>
+								<div class="file-path-wrapper">
+									<input class="file-path validate" placeholder="Faça o upload do arquivo" type="text">
+								</div>
+							</div>
 						</div>
-						<div class="file-path-wrapper">
-							<input class="file-path validate" type="text">
-						</div>
-					</div>	
 					</div>
-				  </div>
 				</div>
-		</div>
-		<div class="modal-footer purple">
-			<a href="#!" class="modal-close waves-effect waves-green btn-flat white-text">fechar</a>
-			<a class="waves-effect waves-light btn red" onclick="UploadRota()">enviar dados</a>
+			</div>
+			<div class="modal-footer purple">
+				<a href="#!" class="modal-close waves-effect waves-green btn-flat white-text">fechar</a>
+				<a class="waves-effect waves-light btn red" onclick="UploadRota()">enviar dados</a>
+			</div>
 		</div>
 	</div>
 
